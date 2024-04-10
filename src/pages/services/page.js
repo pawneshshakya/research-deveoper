@@ -43,8 +43,6 @@ const ServiceDetail = () => {
   };
   const dataPath = data.find((item) => item.path === pathName);
   const dataFaqs = data.find((item) => item.faqs);
-  console.log(dataPath.content[0].para);
-  console.log(popularService);
   return (
     <>
       <div className="md:mt-5 mt-5">
@@ -61,13 +59,13 @@ const ServiceDetail = () => {
               alt="img"
             />
             <div className=" bg-white md:pt-10 px-10"></div>
-            {dataPath.content.map((value, i) => (
+            {dataPath?.content?.map((value, i) => (
               <div className=" bg-white pt-10 px-6 md:px-10" key={i}>
                 <h2 className="lg:w-full text-4xl lg:text-md font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-b from-[#0176bc] via-[#e82e5d] to-[#e82e5d]">
                   {value.question}
                 </h2>
                 <h2 className="text-justify">
-                  {value.para.map((p, i) => (
+                  {value?.para?.map((p, i) => (
                     <div key={i}>
                       <p>{p}</p> <br />
                     </div>
