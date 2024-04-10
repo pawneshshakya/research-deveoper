@@ -111,5 +111,9 @@ const popularService = [
     title: "Software Testing",
     pathName: "/service/software-testing/",
   },
+  {
+    title: "Ansys Implementation",
+    pathName: "/service/ansys-implementation/",
+  },
 ];
 export default popularService;
