@@ -69,7 +69,7 @@ const ServiceDetail = () => {
                 <h2 className="text-justify">
                   {value?.para?.map((p, i) => (
                     <div key={i}>
-                      <p>{p} </p> <br />
+                      <p>{p}</p> <br />
                     </div>
                   ))}
                 </h2>
