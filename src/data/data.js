@@ -436,11 +436,15 @@ const data = [
       },
       {
         question: "Experiments and Results",
-        para: "Present and evaluate the study's findings in a logical manner using tables or figures.",
+        para: [
+          "Present and evaluate the study's findings in a logical manner using tables or figures.",
+        ],
       },
       {
         question: "Conclusion",
-        para: "You should restate the research's significance and provide a summary of the study in this part. Don't forget to include the goals of the study and the approaches taken to address the research questions. Talk about how the study's findings advance our understanding of the issue as well.",
+        para: [
+          "You should restate the research's significance and provide a summary of the study in this part. Don't forget to include the goals of the study and the approaches taken to address the research questions. Talk about how the study's findings advance our understanding of the issue as well.",
+        ],
       },
       {
         question: "References",

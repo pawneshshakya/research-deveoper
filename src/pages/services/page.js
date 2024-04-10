@@ -43,6 +43,7 @@ const ServiceDetail = () => {
   };
   const dataPath = data.find((item) => item.path === pathName);
   const dataFaqs = data.find((item) => item.faqs);
+  console.log(dataPath.content);
   return (
     <>
       <div className="md:mt-5 mt-5">
@@ -99,7 +100,7 @@ const ServiceDetail = () => {
               Popular Services
             </h2>
             <div className="mt-5">
-              <div className="grid grid-cols-2 py-2 px-4">
+              <div className="grid grid-cols-1 py-2 px-4">
                 {popularService.map((value, i) => {
                   return (
                     <PopularServiceCard
